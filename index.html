@@ -1,0 +1,158 @@
+# -
+Реал мадрид и Челси матч
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Real Madrid — Chelsea | СуперМатч</title>
+<meta name="description" content="Суперматч: Real Madrid vs Chelsea — 23 ноября 2025, 22:00 (ALMT). Билеты, трансляция, фан-зона." />
+<style>
+  /* Базовые стили — современный минимализм (готово к размещению на GitHub Pages) */
+  :root{
+    --bg1:#020617; --bg2:#08122a;
+    --accent:#ffdd00; --muted:#bfc9d9; --glass: rgba(255,255,255,0.06);
+    --maxw:1100px;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; min-height:100vh; color:#fff;
+    background:linear-gradient(180deg,var(--bg1),var(--bg2));
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  header{padding:48px 20px; display:flex; align-items:center; justify-content:space-between; max-width:var(--maxw); margin:0 auto;}
+  .brand{display:flex;align-items:center;gap:14px}
+  .logo{
+    width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,#e6e6e6, #cfcfcf);
+    display:flex;align-items:center;justify-content:center;color:#020617;font-weight:800;font-size:18px;
+    box-shadow:0 6px 20px rgba(0,0,0,.45), inset 0 -6px 15px rgba(0,0,0,.08);
+  }
+  nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+  .hero{max-width:var(--maxw);margin:24px auto 0;padding:40px 20px;display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center}
+  .card{
+    background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+    border-radius:16px;padding:28px;box-shadow:0 10px 40px rgba(2,4,12,0.6);backdrop-filter: blur(4px);
+  }
+  h1{margin:0;font-size:34px;line-height:1.05}
+  .sub{color:var(--muted);margin-top:8px;font-weight:600}
+  .match-meta{display:flex;gap:12px;margin-top:18px;align-items:center;flex-wrap:wrap}
+  .pill{background:var(--glass);padding:8px 12px;border-radius:999px;font-weight:700;color:var(--accent);border:1px solid rgba(255,255,255,.04)}
+  .cta-group{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap}
+  .btn{
+    background:var(--accent);color:#071025;padding:12px 18px;border-radius:10px;font-weight:800;border:none;cursor:pointer;
+    box-shadow:0 8px 24px rgba(255,221,0,0.12);
+  }
+  .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,.08);color:var(--muted);font-weight:700}
+  .count{font-size:42px;font-weight:900;margin-top:18px;color:#fff}
+  .teams{display:flex;align-items:center;gap:18px;margin-top:12px}
+  .team{flex:1;text-align:center}
+  .team-name{font-weight:900;font-size:20px}
+  .vs{font-size:18px;color:var(--muted)}
+  .press{max-width:var(--maxw);margin:28px auto;padding:20px}
+  .press h2{margin-top:0}
+  footer{padding:20px;color:var(--muted);text-align:center;font-size:14px;margin-top:30px}
+  /* адаптив */
+  @media (max-width:880px){
+    .hero{grid-template-columns:1fr;padding-bottom:20px}
+    .count{font-size:30px}
+    header{padding:20px}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <div class="logo">⚽</div>
+    <div>
+      <div style="font-weight:800">СуперМатч</div>
+      <div style="color:var(--muted);font-size:13px;margin-top:4px">Real Madrid — Chelsea</div>
+    </div>
+  </div>
+  <nav aria-label="Навигация">
+    <a href="#press">Пресс</a>
+    <a href="#tickets">Билеты</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="card" role="region" aria-labelledby="headline">
+    <h1 id="headline">Real Madrid ✦ Chelsea — Ночь легенд</h1>
+    <div class="sub">23 ноября 2025, 22:00 (ALMT) — арена «СуперМатч»</div>
+
+    <div class="match-meta" aria-hidden="false">
+      <div class="pill">HD трансляция</div>
+      <div class="pill">Фан-зона</div>
+      <div class="pill">Эксклюзивные интервью</div>
+    </div>
+
+    <div class="teams" aria-hidden="true">
+      <div class="team">
+        <div class="team-name">REAL MADRID</div>
+      </div>
+      <div class="vs">VS</div>
+      <div class="team">
+        <div class="team-name">CHELSEA</div>
+      </div>
+    </div>
+
+    <div class="cta-group">
+      <button class="btn" onclick="alert('Переадресация на покупку билетов (пример)')">Купить билет</button>
+      <button class="btn secondary" onclick="alert('Подписка на новости (пример)')">Подписаться</button>
+    </div>
+
+    <div id="countdown" class="count" aria-live="polite">Загрузка таймера...</div>
+  </div>
+
+  <aside class="card" style="display:flex;flex-direction:column;gap:10px">
+    <strong style="font-size:16px">Пресс-релиз</strong>
+    <p style="color:var(--muted);margin:0">
+      Вечер высокой скорости, мастерства и судьбоносных моментов. Фан-зона, прямая трансляция и эксклюзивные интервью — всё в одном событии.
+    </p>
+    <div style="margin-top:auto">
+      <button class="btn" style="width:100%" onclick="document.getElementById('press').scrollIntoView({behavior:'smooth'})">Читать пресс-релиз</button>
+    </div>
+  </aside>
+</section>
+
+<section id="press" class="press card" role="article" aria-labelledby="pr-title">
+  <h2 id="pr-title">Полный пресс-релиз</h2>
+  <p><strong>Заголовок:</strong> ГРАНДИОЗНОЕ ПРОТИВОСТОЯНИЕ: REAL MADRID — CHELSEA. Ночь, которая войдёт в историю футбола.</p>
+  <p><strong>Дата и место:</strong> 23 ноября 2025, 22:00 (ALMT) — арена «СуперМатч».</p>
+  <p>
+    В эту осень два титана мирового футбола встретятся в эпическом поединке: Real Madrid против Chelsea.
+    Это будет вечер высокой скорости, мастерства и судьбоносных моментов — матч, который объединит миллионы болельщиков.
+  </p>
+  <p><em>Информация для СМИ:</em> press@example.com | +7 (700) 000-00-00</p>
+</section>
+
+<footer>
+  © 2025 СуперМатч — официальный промо. Меняйте дату и тексты прямо в коде.
+</footer>
+
+<script>
+/* Настройте дату матча тут (форма YYYY-MM-DDTHH:MM:SS в локальном часовом поясе или в UTC с Z) */
+const MATCH_DATE = "2025-11-23T22:00:00"; // пример: 23 ноября 2025, 22:00 (ALMT)
+
+/* Countdown */
+function updateCountdown(){
+  const now = new Date();
+  const match = new Date(MATCH_DATE);
+  const diff = match - now;
+  const el = document.getElementById('countdown');
+  if (isNaN(match)) { el.textContent = "Некорректная дата матча"; return; }
+  if (diff <= 0) { el.textContent = "Матч идёт или завершён — включай трансляцию!"; return; }
+  const days = Math.floor(diff / (1000*60*60*24));
+  const hours = Math.floor((diff % (1000*60*60*24)) / (1000*60*60));
+  const minutes = Math.floor((diff % (1000*60*60)) / (1000*60));
+  const seconds = Math.floor((diff % (1000*60)) / 1000);
+  el.textContent = `${days}д ${String(hours).padStart(2,'0')}ч ${String(minutes).padStart(2,'0')}м ${String(seconds).padStart(2,'0')}с до стартa`;
+}
+updateCountdown();
+setInterval(updateCountdown, 1000);
+
+/* Примечание: для GitHub Pages просто добавьте этот файл как index.html */
+</script>
+</body>
+</html>
